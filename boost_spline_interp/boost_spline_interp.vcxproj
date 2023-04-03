@@ -72,8 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\CPPLIBS\freeglut-3.2.2\include;C:\CPPLIBS\boost_1_75_0;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\CPPLIBS\freeglut-3.2.2\built\lib\debug;C:\CPPLIBS\boost_1_75_0\libs;C:\CPPLIBS\boost_1_75_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\CPPLIBS\freeglut-3.2.2\include;C:\CPPLIBS\boost_1_77_0;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\CPPLIBS\freeglut-3.2.2\built\lib\debug;C:\CPPLIBS\boost_1_77_0\stage\lib;C:\CPPLIBS\boost_1_77_0\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -158,6 +158,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="boost_spline_interp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="spline.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
